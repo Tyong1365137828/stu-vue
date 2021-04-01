@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>组件通信-子到父-自定义事件</title>
+</head>
+<body>
+
+<!--父组件模板-->
+<div id="demo">
+  <cpn @cpn-for-fu-click="cpnClick"></cpn><!--这个方法会发送一个默认参数参数,默认传递子组件发射($emit)方法的第二个参数-->
+</div>
+
+<!--子组件模板-->
+<template id="cpn">
+  <div>
+    <button
+      v-for="c in category"
+      @click="categoryClick(c)">
+      {{c.name}}
+    </button>
+  </div>
+</template>
+
+<script src="../js/vue.js"></script>
+<script>
+
+  //子组件声明
+  const cpn = {
+    template: '#cpn',
+    data () {
+      return {
+        category: [
+          {id: 1, name: '热门推荐'},
+          {id: 2, name: '手机数码'},
+          {id: 3, name: '春秋换装'},
+          {id: 3, name: '棉衣棉裤'}
+        ]
+      }
+    },
+    methods: {
+      categoryClick (caory) {
+        this.$emit('cpn-for-fu-click', caory)  //向父组件模板发射一个自定义事件 参数1、自定义事件名
+      }
+    }
+  }
+
+  //父组件
+  const app = new Vue({
+    el: "#demo",
+    data: {
+      message: '你好'
+    },
+    methods: {
+      cpnClick (item) {
+        console.log(item);
+      }
+    },
+    components: {
+      cpn //把上面声明的子组件注册
+    }
+
+  })
+</script>
+</body>
+</html>

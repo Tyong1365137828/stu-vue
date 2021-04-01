@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>事件监听v-on函数的参数传递</title>
+  <script src="../js/vue.js"></script>
+</head>
+<body>
+
+<div id="demo">
+
+<!--  当事件调用的方法没有参数时-->
+  <button @click="btn1Click()">btn1</button>
+  <button @click="btn1Click">btn1</button>
+  <br>
+
+<!--  当事件监听的方法有参数时-->
+  <button @click="btn2Click(22)">btn2</button><!--传入参数22数字-->
+  <button @click="btn2Click('a')">btn2</button><!--传入参数'a'字符串-->
+  <button @click="btn2Click(a)">btn2</button><!--data的变量据作为传入的参数-->
+  <button @click="btn2Click()">btn2</button><!--此时显示参数undefined,未定义-->
+  <!--  可以看出,如果在事件函数需要参数但没有传入参数时,Vue会默认把浏览器产生的@event事件对象作为参数传入方法-->
+  <button @click="btn2Click">btn2</button>
+  <br>
+
+<!--  当事件函数的参数即需要参数,有需要event事件对象时-->
+  <button @click="btn3Click(a, $event)">btn3</button>
+  <button @click="btn3Click('a', $event)">btn3</button>
+  <button @click="btn3Click(123, $event)">btn3</button>
+  <br>
+
+</div>
+
+<script>
+  const app = new Vue({
+    el: "#demo",
+    data: {
+      message: '你好',
+      a: '参数a'
+    },
+    methods: {
+      btn1Click () {
+        console.log('btn1被点击');
+      },
+      btn2Click (arg) {
+        console.log('btn2被点击' + arg);
+      },
+      btn3Click (arg, event) {
+        console.log('btn3被点击' + arg + ';' + event);
+      }
+    }
+
+  })
+</script>
+</body>
+</html>

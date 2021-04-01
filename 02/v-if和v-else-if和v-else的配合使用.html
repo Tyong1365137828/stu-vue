@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>v-if和v-else-if的配合使用</title>
+  <script src="../js/vue.js"></script>
+</head>
+<body>
+
+<div id="demo">
+  <h1>{{showRank}}</h1><!--使用计算属性判断-->
+
+  <h2 v-if="score >= 90">优秀</h2>
+  <h2 v-else-if="score >= 80">良好</h2>
+  <h2 v-else-if="score >= 60">合格</h2>
+  <h2 v-else>不合格</h2>
+</div>
+
+<script>
+  const app = new Vue({
+    el: "#demo",
+    data: {
+      score: 99
+    },
+    computed: {
+      showRank () {
+        let Rank = '';
+        if (this.score >= 90) {
+          Rank = '优秀';
+        } else if (this.score >= 80) {
+          Rank = '良好';
+        } else if (this.score >= 60) {
+          Rank = '合格';
+        } else {
+          Rank = '不合格';
+        }
+        return Rank;
+      }
+    }
+
+  })
+</script>
+</body>
+</html>

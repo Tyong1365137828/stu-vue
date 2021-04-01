@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-bind绑定style对象语法</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+
+<div id="demo">
+
+    <!--语法格式,key: value 格式,但是注意如果属性值是直接写到上面的,就需要给这个属性值加单引号,否则vue会把它当作一个变量去data中寻找-->
+<!--    <h1 :style="{css属性名1: 属性值, css属性名1: 属性值, ......}">{{message}}</h1>-->
+
+<!--    写法一-->
+    <h1 :style="{background: 'red', fontSize: '100px'}">{{message}}</h1>
+<!--    写法二-->
+    <h1 :style="{background: 'red', fontSize: fontSizeNum + 'px'}">{{message}}</h1>
+<!--    写法三-->
+    <h1 :style="{background: b_color, fontSize: f_size}">{{message}}</h1>
+<!--    写法四-->
+    <h1 :style="getStyle()">{{message}}</h1>
+</div>
+
+<script>
+    const app = new Vue({
+        el: "#demo",
+        data: {
+            message: '你好',
+            b_color: 'red',
+            f_size: '100px',
+            fontSizeNum: 100
+        },
+        methods: {
+            getStyle: function () {
+                return {background: this.b_color, fontSize: this.f_size}
+            }
+        }
+
+    })
+</script>
+
+</body>
+</html>

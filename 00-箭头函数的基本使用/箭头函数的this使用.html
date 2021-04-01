@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>箭头函数的this使用</title>
+</head>
+<body>
+
+<script>
+
+  console.log('script中的'+this); //打印的是window
+  setTimeout(function () {
+    console.log('setTimeout使用function的this'+this);
+  })  //可以发现打印的是window
+  setTimeout(() => {
+    console.log('setTimeout使用箭头函数的this' + this);
+  })  //可以发现打印的是window
+
+  const myObj = {
+    // this //myObj的this就是obj对象
+
+    test () {
+      setTimeout(function () {
+        console.log('obj对象内test函数中setTimeout使用function的this' + this);
+      })  //可以发现打印的是window
+
+      setTimeout(() => {
+        console.log('obj对象内test函数中setTimeout使用箭头函数的this' + this);
+      })  //可以发现打印的是obj对象
+    }
+  }
+  myObj.test()
+  /**结论：箭头函数的this查找方式:向外层作用域中,一层层查找this,直到有this的定义;即指向上层作用域的this*/
+
+
+
+
+
+
+</script>
+</body>
+</html>

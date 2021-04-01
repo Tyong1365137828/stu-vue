@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>v-model搭配select使用</title>
+</head>
+<body>
+<div id="demo">
+
+<!--  select单选框-->
+  <select v-model="fruit">
+    <option value="苹果">苹果</option>
+    <option value="香蕉">香蕉</option>
+    <option value="猕猴桃">猕猴桃</option>
+    <option value="橘子">橘子</option>
+  </select>
+  <h2>你选择了"{{fruit}}"水果</h2>
+
+  <br><br><br>
+
+  <select v-model="fruits" multiple>
+    <option value="苹果">苹果</option>
+    <option value="香蕉">香蕉</option>
+    <option value="橘子">橘子</option>
+    <option value="榴莲">榴莲</option>
+  </select>
+  <h2>你喜欢的水果是:"{{fruits}}"</h2>
+
+</div>
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: "#demo",
+    data: {
+      fruit: '',
+      fruits: []
+    },
+
+  })
+</script>
+</body>
+</html>

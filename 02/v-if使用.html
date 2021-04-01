@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>v-if的使用</title>
+  <script src="../js/vue.js"></script>
+</head>
+<body>
+<div id="demo">
+  <h1 v-if="isShow">{{message}}</h1>
+  <h1 v-else>{{noMessage}}</h1>
+</div>
+
+<script>
+  const app = new Vue({
+    el: "#demo",
+    data: {
+      message: '你好',
+      isShow: true,
+      noMessage: '如果看到我,表示isShow为false'
+    },
+
+  })
+</script>
+</body>
+</html>

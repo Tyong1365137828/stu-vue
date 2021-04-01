@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>v-on修饰符</title>
+  <script src="../js/vue.js"></script>
+</head>
+<body>
+<div id="demo">
+
+<!--  .stop的用法-->
+  <div @click="divClick">
+    <button @click.stop="btn1Click">btn1</button><!--加上 .stop 会阻止事件冒泡-->
+  </div>
+  <br>
+
+<!--  .prevent的用法-->
+  <a href="http://www.baidu.com" @click.prevent="aClick">百度一下</a><!--加上 .prevent 会阻止默认行为-->
+  <br>
+
+<!--  .键盘按键码 监听键盘按键的点击-->
+  <input type="text" @keyup="keyUp"><!--当任意按键抬上后-->
+  <br>
+  <input type="text" @keyup.enter="keyUpEnter"><!--当enter按键抬上后-->
+  <br>
+
+<!--  .once使用-->
+  <button @click.once="btn2Click">btn2</button><!--只能触发一次监听-->
+
+</div>
+
+
+
+<script>
+  const app = new Vue({
+    el: "#demo",
+    data: {
+      message: '你好'
+    },
+    methods: {
+      divClick () {
+        console.log('divClick被点击');
+      },
+      btn1Click () {
+        console.log('btn1被Click');
+      },
+      aClick () {
+        console.log('a被Click');
+      },
+      keyUp () {
+        console.log('按键松开了');
+      },
+      keyUpEnter () {
+        console.log('Enter按键松开了');
+      },
+      btn2Click () {
+        console.log('btn2被Click了');
+      }
+    }
+  })
+</script>
+</body>
+</html>

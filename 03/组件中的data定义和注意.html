@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>组件中的data定义和注意</title>
+</head>
+<body>
+<div id="demo">
+  <my_cpn></my_cpn><!--可以发现每个组件之间是互不影响的-->
+  <my_cpn></my_cpn>
+  <my_cpn></my_cpn>
+  <my_cpn></my_cpn>
+  <my_cpn></my_cpn>
+</div>
+
+<template id="cpn1">
+  <div>
+    <h2>当前计数：{{count}}</h2>
+    <button @click="add">+</button>
+    <button @click="sub">-</button>
+  </div>
+</template>
+<script src="../js/vue.js"></script>
+<script>
+
+  //使count在每个调用的组件中公用
+  // const obj = {
+  //   count: 0
+  // }
+
+  //注册全局组件
+  Vue.component('my_cpn', {
+    template: '#cpn1',
+    data () { //组件中的数据存储必须是这种形式的,这是为了让每个被调用的组件调用不同内存地址的数据<即获取不同的数据>,从而不会互相影响,产生连锁现象,影响程序的运行
+      return {
+        count: 0
+      }
+      // return obj  //可以发现如果使用外面定义的对象里的count时,count是会在组件中产生互相连锁的现象的
+    },
+    methods: {
+      add () {
+        this.count++
+      },
+      sub () {
+        this.count--
+      }
+    }
+  })
+
+  const app = new Vue({
+    el: "#demo",
+    data: {
+      message: '你好'
+    },
+
+
+  })
+</script>
+</body>
+</html>

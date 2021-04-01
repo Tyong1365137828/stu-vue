@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>子访问父-parent和root方式</title>
+</head>
+<body>
+
+<!--root组件&#45;&#45;Vue-根组件-->
+<div id="demo">
+  <h2>我是Vue根组件</h2>
+  <cpn_1></cpn_1>
+</div>
+
+<!--Vue-root组件的子组件cpn_1的模板-->
+<template id="cpn1">
+  <div>
+    <h2>我是2代cpn组件</h2>
+    <cpn_2></cpn_2>
+  </div>
+</template>
+
+<!--cpn_1组件的cpn_2组件-->
+<template id="cpn2">
+  <div>
+    <h2>我是3代cpn组件</h2>
+    <button @click="parentFor">parent访问父组件</button>
+    <button @click="rootFor">root访问根组件</button>
+  </div>
+</template>
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: "#demo",
+    data: {
+      name: 'My name is root'
+    },
+
+    components: {
+      cpn_1: {
+        template: '#cpn1',
+        data () {
+          return {
+            name: 'My name is CPN1'
+          }
+        },
+
+        components: {
+          cpn_2: {
+            template: '#cpn2',
+            methods: {
+              parentFor () {
+                console.log(this.$parent);//获取父组件
+                console.log(this.$parent.name);//获取父组件的name属性
+              },
+              rootFor () {
+                console.log(this.$root);//获取根组件
+                console.log(this.$root.name);//获取根组件的name属性
+              }
+            }
+          }
+        }
+
+      }
+    }
+
+  })
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .active {
+      color: red;
+    }
+  </style>
+  <title>作业1</title>
+</head>
+<body>
+
+<div id="demo">
+  <ul>
+    <li v-for="(m, index) in movies"
+      :class="{active: currentIndex === index}"
+      @click="clickIndex(index)">
+      {{m}}</li>
+  </ul>
+</div>
+
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: "#demo",
+    data: {
+      movies: ['红海行动', '战狼', '士兵突击', '我的团长我的团'],
+      currentIndex: 0//记录当前要展示的index
+    },
+    methods: {
+      clickIndex: function (index) {
+        this.currentIndex = index;//把要展示的index变成当前点击的index
+      }
+    }
+
+  })
+</script>
+</body>
+</html>

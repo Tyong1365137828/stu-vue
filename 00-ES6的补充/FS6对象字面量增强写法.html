@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对象字面量增强写法</title>
+</head>
+<body>
+
+<script>
+    //属性的增强写法
+    const name = 'tyong';
+    const age = 20;
+    const wight = 62;
+
+    //ES5增强写法
+    // const obj = {
+    //     name: name,
+    //     age: age,
+    //     wight: wight
+    // }
+    // console.log(obj);
+
+    //ES6的写法
+    const obj = {
+        name,
+        age,
+        wight
+    }
+    console.log(obj);
+
+
+
+
+    //2.函数的增强写法
+    //ES5的写法
+    const obj = {
+        ready: function () {
+            console.log('readying for action ....');
+        },
+        go: function () {
+            console.log('go go go ....');
+        }
+    }
+
+    //ES6写法
+    const obj = {
+        ready () {
+            console.log('readying for action ....');
+        },
+        go () {
+            console.log('go go go ....');
+        }
+    }
+
+
+</script>
+
+</body>
+</html>

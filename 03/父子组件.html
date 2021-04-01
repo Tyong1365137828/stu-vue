@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>父子组件</title>
+</head>
+<body>
+<div id="demo">
+  <my_cpn2></my_cpn2>
+</div>
+<script src="../js/vue.js"></script>
+<script>
+  //组件构造器1
+  const cpn1C = Vue.extend({
+    template: `
+    <div>
+      <h2>标题一</h2>
+      <p>内容一</p>
+    </div>`
+  })
+
+  //组件构造器2
+  const cpn2C = Vue.extend({
+    template: `
+    <div>
+      <h2>标题二</h2>
+      <p>内容二</p>
+      <my_cpn1></my_cpn1>
+    </div>`,
+    components: {
+      my_cpn1: cpn1C  //在组件二中注册相对于组件二局部的组件一,此时可以在此组件中使用组件1了   <即组件一相对于组件二是组件二的子组件;组件二相对于组件一是组件一的父组件>
+    }
+  })
+
+  //注册组件一为全局组件
+  // Vue.component('my_cpn1', cpn1C)
+
+  //注册组件二为全局组件
+  // Vue.component('my_cpn2', cpn2C)
+
+  const app = new Vue({
+    el: "#demo",
+    data: {
+      message: '你好'
+    },
+    components: {
+      my_cpn2: cpn2C  //注册组件2为Vue的子组件
+    }
+  })
+</script>
+</body>
+</html>

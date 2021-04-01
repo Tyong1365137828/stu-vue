@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>v-for遍历数组和对象</title>
+  <script src="../js/vue.js"></script>
+</head>
+<body>
+<div id="demo">
+
+  <h2>遍历数组</h2>
+<!--  v-for遍历数组-->
+  <ul>
+    <li v-for="n in names">{{n}}</li>
+  </ul>
+
+<!--  v-for遍历数组并获取索引值-->
+  <ul>
+    <li v-for="(n, index) in names">{{index}}-{{n}}</li>
+  </ul>
+
+  <br>
+  <br>
+  <br>
+
+  <h2>遍历对象</h2>
+<!--  v-for遍历对象,只传一个值,获取的就是value-->
+  <ul>
+    <li v-for="value in person">{{value}}</li>
+  </ul>
+
+<!--  v-for遍历对象,如果传两个值, (value, key)-->
+  <ul>
+    <li v-for="(value, key) in person">{{key}}--{{value}}</li>
+  </ul>
+
+<!--  v-for遍历对象,如果传入三个值, (value, key, index)-->
+  <ul>
+    <li v-for="(value, key, index) in person">{{index + 1}}.{{key}}-{{value}}</li>
+  </ul>
+
+</div>
+
+<script>
+  const app = new Vue({
+    el: "#demo",
+    data: {
+      message: '你好',
+      names: ['tyong', 'tangyong', '汤勇'],
+      person: {
+        name: 'tyong',
+        age: 20,
+        height: 188
+      }
+    },
+
+  })
+</script>
+</body>
+</html>

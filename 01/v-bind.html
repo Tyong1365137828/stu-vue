@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bind的基本使用</title>
+</head>
+<body>
+
+<div id="demo">
+    <img v-bind:src="imgURL" alt="">
+    <a v-bind:href="aHref">跳转到vue</a>
+    <a :href="aHref">语法糖写法</a><!--语法糖(简写)写法-->
+</div>
+
+<script src="../js/vue.js"></script>
+<script>
+    const app = new Vue({
+        el: "#demo",
+        data: {
+            imgURL: 'https://cn.vuejs.org/images/logo.png',
+            aHref: 'https://cn.vuejs.org/'
+        }
+
+    })
+</script>
+</body>
+</html>

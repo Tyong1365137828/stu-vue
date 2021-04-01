@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>插值语法Mustache语法</title>
+    <style>
+        [v-cloak] { /*存在v-cloak ,就不展示内容*/
+            display: none;
+        }
+    </style>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+<div id="demo" v-cloak><!--因为程序从上到下进行解析执行,当还未进行vue解析处理时,浏览器会把{{message}}展示给用户,
+    当加上v-cloak 后,因为vue解析之前,div中有属性v-cloak,那么就可以通过style样式决定显示样式,甚至是不显示;vue解析完毕后,v-cloak就删除了,那么就会显示出原先的样式-->
+
+    <!--    Mustache语法-->
+    <h3>{{message}}</h3>
+    <h3>{{message + ' ' + message2}}</h3>
+    <h3>{{message}} {{message2}}</h3>
+    <h3>{{counter * 2}}</h3>
+
+
+<!--    其他-->
+    <h3 v-once>{{message}}</h3><!--此时该数据只能渲染一次,可以在浏览器控制台更改验证查看-->
+    <h3>{{url}}</h3>
+    <h3 v-html="url"></h3><!--会自动解析指定变量的html标签-->
+
+    <h3 v-text="message2">我会被覆盖掉</h3><!--将指定的变量当作text处理,但是会产生覆盖-->
+
+    <h3 v-pre>{{message}}</h3><!--里面的{{message}}不会被vue解析-->
+
+</div>
+
+<script>
+    setTimeout(function () {
+        const app = new Vue({
+            el: "#demo",
+            data: {
+                message: '你好',
+                message2: '你好啊!!!',
+                counter: 100,
+
+
+                url: '<a href="http://www.baidu.com">百度一下</a>'
+            }
+
+        })
+    },3000)
+</script>
+</body>
+</html>

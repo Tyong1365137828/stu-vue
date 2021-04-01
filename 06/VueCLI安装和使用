@@ -1,0 +1,32 @@
+控制台输入  npm install -g @vue/cli@3.2.1  即可安装
+
+拉取2.x版本  npm install -g @vue/cli-init
+
+完成上述步骤后,脚手架2、3版本均可使用
+
+
+Vue CLI2初始化项目  vue init webpack my-project    基于webpack3;可使用3.6.0版本
+package.json查看
+CLI2本地服务器测试:  npm run dev
+CLI2打包:  npm run build
+
+
+
+Vue CLI3初始化项目  vue create my-project      基于webpack4;可使用4版本
+package.json查看
+CLI3本地服务器测试:  npm run serve
+CLI3打包:  npm run build
+
+VueCLI3配置的查看修改:任意目录下输入命令  vue ui  可视化配置
+或者在项目的node_modules=>@vue=>cli-service=>webpack.config.js 然后可以发现在本文件同目录下的 lib=>Service.js文件中
+
+目录下创建vue.config.js文件
+
+
+创建项目时的runtime-compiler和runtime-only区别：
+runtime-compiler:在Vue内部的过程：template -> ast(抽象语法树) -> render函数 -> virtual dom(虚拟Dom) -> UI(真实Dom)
+
+runtime-only:在Vue内部的过程：render函数 -> Virtual Dom(虚拟Dom) -> UI(真实Dom)
+
+由此,得出结论：1、runtime-only的性能更高
+    2、runtime-only 的代码量更少

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-bind动态绑定class对象语法</title>
+    <style>
+        .active {
+            color: red;
+        }
+    </style>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+<div id="demo">
+<!--    对象语法：写法一-->
+    <div class="title" :class="{active: isActive, list: isList}">{{message}}</div>
+    <!--对象语法：注意当v-bind绑定的class发生变化时，初始赋值的class不会被覆盖掉，而是与绑定的class中能否获取的class进行结合；
+        v-bind监听的class内只有一个{}, 它表示 key: value 其中value一个布尔类型的对象，value为true就把对应的key加入到class中；为false，就从class中移除-->
+
+<!--    对象语法：写法二-->
+    <div class="title" :class="getClass()">{{message}}</div>
+
+<!--    数组语法-->
+    <div :class="[]">{{message}}</div>
+
+
+    <button v-on:click="updateClass">点击改变上面元素的class</button>
+
+</div>
+    <script>
+        const app = new Vue({
+            el: "#demo",
+            data: {
+                message: '你好',
+                isActive: true,
+                isList: true
+            },
+            methods: {
+                getClass: function () {
+                    return {active: this.isActive, list: this.isList}
+                },
+                updateClass: function () {
+                    this.isActive = !this.isActive;//把isActive取反
+                    // this.isList = !this.isList;//把isList取反
+                }
+            }
+
+        })
+    </script>
+</body>
+</html>

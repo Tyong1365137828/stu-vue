@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>组件化的基本使用</title>
+</head>
+<body>
+<div id="demo">
+  <my-cpn></my-cpn><!--调用全局组件-->
+  <my-cpn></my-cpn><!--调用全局组件-->
+  <my-cpn></my-cpn><!--调用全局组件-->
+</div>
+
+<div id="demo2">
+  <my-cpn></my-cpn><!--调用全局组件-->
+</div>
+
+<my-cpn></my-cpn><!--没有在Vue实例下就不能使用组件<包括全局组件和局部组件>-->
+
+<script src="../js/vue.js"></script>
+<script>
+  const cpnConstructor = Vue.extend({ //组件构造器
+    template: `
+      <div>
+        <h2>标题</h2>
+         <p>内容......</p>
+        <p>内容......</p>
+        <p>内容......</p>
+      </div>`
+  })
+
+  //注册组件<这种方式注册的组件是全局组件,即可以在多个Vue实例中使用>
+  Vue.component('my-cpn', cpnConstructor);
+
+  const app = new Vue({
+    el: "#demo",
+    data: {
+      message: '你好'
+    },
+  })
+
+  const app2 = new Vue({
+    el: "#demo2",
+    data: {
+      message: 'vue实例2'
+    }
+  })
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>v-model值绑定</title>
+</head>
+<body>
+<div id="demo">
+  <label v-for="f in originFruits" :for="f">
+    <input type="checkbox" :value="f" :id="f" v-model="checkFruits">{{f}}
+  </label>
+  <h2>你选择了水果{{checkFruits}}</h2>
+</div>
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: '#demo',
+    data: {
+      message: '你好',
+      originFruits: ['香蕉', '苹果', '橘子', '榴莲'],
+      checkFruits: []
+    },
+
+  })
+</script>
+</body>
+</html>

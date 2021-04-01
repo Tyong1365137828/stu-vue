@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算属性2--复杂的计算属性</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+
+<div id="demo">
+<!--    写法一-->
+    书本的总价格: {{books[0].price + books[1].price + books[2].price + books[3].price}}<br>
+<!--    写法二-->
+    书本的总价格: {{getTotalPrice()}}<br>
+
+<!--    写法三,计算属性的写法-->
+    书本的总价格: {{totalPrice}}
+</div>
+
+
+<script>
+    const app = new Vue({
+        el: "#demo",
+        data: {
+            books: [
+                {id: 1, name: 'linux精通', price: 45.6},
+                {id: 2, name: '计算机网络', price: 55.8},
+                {id: 3, name: '编译原理', price: 55.6},
+                {id: 4, name: '软件工程', price: 65}
+            ]
+        },
+        computed: { //用于定义计算属性
+            totalPrice: function () {//totalPrice计算属性
+                let allPrice = 0;//声明总价
+                for (let i = 0; i < this.books.length; i++) {
+                    allPrice += this.books[i].price;
+                }
+                return allPrice;//返回总价
+            }
+        },
+        methods: {
+            getTotalPrice: function () {
+                return this.books[0].price + this.books[1].price + this.books[2].price + this.books[3].price;
+            }
+        }
+
+    })
+</script>
+
+</body>
+</html>

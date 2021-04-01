@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>事件监听v-on</title>
+  <script src="../js/vue.js"></script>
+</head>
+<body>
+<div id="demo">
+  <h2>{{count}}</h2>
+
+<!--  写法一-->
+<!--  <button v-on:click="count++">+</button>-->
+<!--  <button v-on:click="count&#45;&#45;">-</button>-->
+
+<!--  写法二-->
+<!--  <button v-on:click="add">+</button>-->
+<!--  <button v-on:click="sub">-</button>-->
+
+<!--  写法三，语法糖写法,注意:在事件监听的情况下,且没有函数参数传递,括号可以省略-->
+  <button @click="add">+</button>
+  <button @click="sub">-</button>
+</div>
+
+<script>
+  const app = new Vue({
+    el: "#demo",
+    data: {
+      count: 0
+    },
+  methods: {
+    add () {
+      this.count++;
+    },
+    sub () {
+      this.count--;
+    }
+  }
+  })
+</script>
+
+</body>
+</html>

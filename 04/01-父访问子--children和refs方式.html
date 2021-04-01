@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>父访问子--children和refs方式</title>
+</head>
+<body>
+
+<!--根组件&#45;&#45;CPN的父组件-->
+<div id="demo">
+  <h2>root组件--子组件CPN的父组件</h2>
+  <cpn></cpn>
+  <cpn ref="cpn1name"></cpn>
+  <cpn ref="cpn2name"></cpn>
+  <cpn></cpn>
+  <button @click="clickForChildren">父组件通过children访问子组件</button>
+  <button @click="clickForRefs">父组件通过refs访问子组件</button>
+</div>
+
+<!--Vue-root组件的子组件cpn的模板-->
+<template id="cpn">
+  <div>
+    <h3>子组件CPN内</h3>
+  </div>
+</template>
+
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: "#demo",
+    data: {
+      message: '你好'
+    },
+    methods: {
+      clickForChildren () { //children拿到一个数组,放置所有的子组件对象
+        console.log(this.$children);  //获取所有的子组件
+        console.log(this.$children[0].name); //获取索引为0的子组件的name属性
+      },
+      clickForRefs () { //refs拿到一个对象,默认为空,可以通过在前台cpn子组件内添加 ref="名字" 标识该组件,然后通过 this.$refs.要取组件的名字 即可获取
+        console.log(this.$refs);  //如果前台的cpn子组件都没有 ref="名字" ,那么默认拿到的是一个空对象;如果存在子组件有 ref="名字",那么就拿到这些有 ref="" 的子组件
+        console.log(this.$refs.cpn2name); //拿到组件 refs名字为cpn2name 的组件对象
+        console.log(this.$refs.cpn2name.name); //拿到组件 refs名为cpn2name 的组件对象的name属性
+      }
+    },
+    components: {
+      cpn: {  //子组件cpn
+        template: '#cpn',
+        data () {
+          return {
+            name: 'MY name is CPN'
+          }
+        }
+      }
+    }
+
+  })
+</script>
+</body>
+</html>

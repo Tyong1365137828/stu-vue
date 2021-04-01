@@ -1,0 +1,28 @@
+更改location.hash,会使url改变,但是网页不会刷新
+
+H5中history.pushState({}, '', 'url') 也会使url改变,但是网页不刷新
+history.back()  //类似于浏览器的返回按钮(向左按钮)
+history.forward() //类似于浏览器的向右按钮
+
+history.replaceState({}, '', '') 也会使url改变,但是网页不刷新;这种方式不能点击浏览器的返回按钮(向左向右按钮)
+
+history.go(-1)  //类似于history.back()
+history.go(-2)  //即执行两次history.back()
+history.go(2)   //相当于点击了两次浏览器的向右按钮
+
+
+VueRouter的操作,或者其他的前台渲染可以参考上述(即不用过多的去请求服务器(静态资源服务器,因为一次就拿到了大多的数据,后续只需要在不请求服务器的情况下通过
+  VueRouter去抽取请求资源进行进行特定的前台渲染的),)
+
+
+安装vue-router   npm install vue-router --save-dev  //脚手架选择自带
+
+
+
+
+压缩后的代码解析： js文件夹中的app.。。。。。.js 当前应用程序开发的所有代码(业务代码)
+  vendor.。。。。.js 第三方的(如vue、vue-router、axios、bs等)
+  manifest.。。。.js 为打包的文件做底层支撑的
+
+
+懒加载后的文件，上述的文件同样存在，在其基础上增加了0、1、2、3、....js文件(一个路由对应一个js打包文件)

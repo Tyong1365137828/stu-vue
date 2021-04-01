@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Promise的另一种写法</title>
+</head>
+<body>
+
+
+<script>
+
+  /**Promise的写法*/
+  // new Promise((resolve, reject) => {
+  //  setTimeout(() => {
+  //    // resolve('Success') //成功,会回调.then()方法
+  //    reject('ERROR!!!') //失败,会回调.catch()方法
+  //  }, 1500)
+  // }).then(data => {
+  //   console.log(data);
+  // }).catch(error => {
+  //   console.log(error);
+  // })
+
+
+  /**Promise的另一种写法
+   * 只是用then()函数,then()函数传入两个参数,参数1对应成功<resolve>调用的方法;参数2对应失败<reject>调用的方法*/
+  // new Promise((resolve, reject) => {
+  //   setTimeout(() => {
+  //     // resolve('SUCCESS')
+  //     reject('ERROR!!!')
+  //   }, 1500)
+  // }).then(data => {
+  //   console.log(data);
+  // }, error => {
+  //   console.log(error);
+  // })
+
+
+  /**Promise的链式写法*/
+
+
+</script>
+</body>
+</html>

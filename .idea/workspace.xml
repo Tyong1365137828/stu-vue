@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="76e03ec0-8d9f-4130-837f-2dd4b70655fb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/03-v-bind使用/06-绑定class属性(数组).html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/03-v-bind使用/07-绑定style属性(对象).html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/03-v-bind使用/08-绑定style属性(数组).html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/04-计算属性/01-什么是计算属性.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/04-计算属性/02-计算属性复杂操作.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/04-计算属性/03-计算属性setter和getter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/04-计算属性/04-computed和methods的区别.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/05-事件监听/01-v-on基本使用.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/05-事件监听/02-v-on参数问题.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/05-事件监听/03-v-on停止冒泡.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/06-条件判断/01-v-if和v-else.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/06-条件判断/02-v-if和v-else-if和v-else.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/06-条件判断/03-条件渲染案例.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/06-条件判断/04-v-show的使用.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/06-条件判断/05-v-if和v-show区别.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/07-循环遍历/01-v-for遍历数组.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/07-循环遍历/02-v-for遍历对象.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/08-阶段练习/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/08-阶段练习/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/08-阶段练习/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/assets/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/assets/css/normalize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/assets/img/cart/tick.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/assets/img/common/arrow-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/assets/img/common/back.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/assets/img/common/collect.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/assets/img/common/placeholder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/assets/img/common/top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/assets/img/detail/cart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/assets/img/detail/detail_bottom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/assets/img/home/recommend_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/assets/img/profile/avatar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/assets/img/profile/cart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/assets/img/profile/message.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/assets/img/profile/phone.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/assets/img/profile/pointer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/assets/img/profile/shopping.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/assets/img/profile/vip.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/assets/img/tabbar/category.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/assets/img/tabbar/category_active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/assets/img/tabbar/home.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/assets/img/tabbar/home_active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/assets/img/tabbar/profile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/assets/img/tabbar/profile_active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/assets/img/tabbar/shopcart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/assets/img/tabbar/shopcart_active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/common/const.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/common/mixin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/common/models.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/common/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/components/common/gridView/GridView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/components/common/navbar/NavBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/components/common/scroll/Scroll.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/components/common/swiper/Swiper.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/components/common/swiper/SwiperItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/components/common/swiper/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/components/common/tabbar/TabBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/components/common/tabbar/TabBarItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/components/common/toast/Toast.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/components/common/toast/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/components/content/backTop/BackTop.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/components/content/goods/GoodsList.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/components/content/goods/GoodsListItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/components/content/sportBall/SportBall.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/components/content/tabControl/TabControl.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/components/content/tabbar/MainTabBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/network/category.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/network/detail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/network/home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/network/network.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/store/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/store/getters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/store/mutation-types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/store/mutations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/views/cart/Cart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/views/cart/childComps/CartBottomBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/views/cart/childComps/CartList.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/views/cart/childComps/CartListItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/views/cart/childComps/CheckButton.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/views/category/Category.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/views/category/childComps/TabContent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/views/category/childComps/TabContentCategory.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/views/category/childComps/TabContentDetail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/views/category/childComps/TabMenu.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/views/detail/Detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/views/detail/childComps/CartButton.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/views/detail/childComps/DetailBaseInfo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/views/detail/childComps/DetailBottomBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/views/detail/childComps/DetailCommentInfo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/views/detail/childComps/DetailGoodsInfo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/views/detail/childComps/DetailNavBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/views/detail/childComps/DetailParamInfo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/views/detail/childComps/DetailShopInfo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/views/detail/childComps/DetailSwiper.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/views/home/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/views/home/childComps/FeatureView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/views/home/childComps/HomeSwiper.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/views/home/childComps/RecommendView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/views/profile/Profile.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/views/profile/childComps/AccountInfo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/views/profile/childComps/NormalListView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/views/profile/childComps/UserInfo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/vue.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/assets/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/assets/css/normalize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/assets/img/cart/tick.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/assets/img/common/arrow-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/assets/img/common/back.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/assets/img/common/collect.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/assets/img/common/placeholder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/assets/img/common/top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/assets/img/detail/cart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/assets/img/detail/detail_bottom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/assets/img/home/recommend_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/assets/img/profile/avatar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/assets/img/profile/cart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/assets/img/profile/message.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/assets/img/profile/phone.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/assets/img/profile/pointer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/assets/img/profile/shopping.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/assets/img/profile/vip.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/assets/img/tabbar/category.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/assets/img/tabbar/category_active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/assets/img/tabbar/home.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/assets/img/tabbar/home_active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/assets/img/tabbar/profile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/assets/img/tabbar/profile_active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/assets/img/tabbar/shopcart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/assets/img/tabbar/shopcart_active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/common/const.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/common/mixin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/common/models.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/common/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/components/common/gridView/GridView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/components/common/navbar/NavBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/components/common/scroll/Scroll.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/components/common/swiper/Swiper.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/components/common/swiper/SwiperItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/components/common/swiper/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/components/common/tabbar/TabBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/components/common/tabbar/TabBarItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/components/common/toast/Toast.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/components/common/toast/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/components/content/backTop/BackTop.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/components/content/goods/GoodsList.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/components/content/goods/GoodsListItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/components/content/sportBall/SportBall.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/components/content/tabControl/TabControl.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/components/content/tabbar/MainTabBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/network/category.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/network/detail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/network/home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/network/network.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/store/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/store/getters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/store/mutation-types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/store/mutations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/views/cart/Cart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/views/cart/childComps/CartBottomBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/views/cart/childComps/CartList.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/views/cart/childComps/CartListItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/views/cart/childComps/CheckButton.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/views/category/Category.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/views/category/childComps/TabContent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/views/category/childComps/TabContentCategory.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/views/category/childComps/TabContentDetail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/views/category/childComps/TabMenu.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/views/detail/Detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/views/detail/childComps/CartButton.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/views/detail/childComps/DetailBaseInfo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/views/detail/childComps/DetailBottomBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/views/detail/childComps/DetailCommentInfo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/views/detail/childComps/DetailGoodsInfo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/views/detail/childComps/DetailNavBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/views/detail/childComps/DetailParamInfo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/views/detail/childComps/DetailShopInfo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/views/detail/childComps/DetailSwiper.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/views/home/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/views/home/childComps/FeatureView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/views/home/childComps/HomeSwiper.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/views/home/childComps/RecommendView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/views/profile/Profile.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/views/profile/childComps/AccountInfo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/views/profile/childComps/NormalListView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/views/profile/childComps/UserInfo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/vue.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 11/课堂代码/supermall/src/common/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 11/课堂代码/supermall/src/network/detail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 11/课堂代码/supermall/src/views/detail/Detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 11/课堂代码/supermall/src/views/detail/childComps/DetailBaseInfo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 11/课堂代码/supermall/src/views/detail/childComps/DetailGoodsInfo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 11/课堂代码/supermall/src/views/detail/childComps/DetailNavBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 11/课堂代码/supermall/src/views/detail/childComps/DetailParamInfo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 11/课堂代码/supermall/src/views/detail/childComps/DetailShopInfo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 11/课堂代码/supermall/src/views/detail/childComps/DetailSwiper.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/.idea/LearnVuejs Day 01.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/01-Vue初体验/01-Hello Vuejs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/01-Vue初体验/02-Vue列表展示.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/01-Vue初体验/03-案例:计数器.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/01-Vue初体验/04-数据和Vue实例分离.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/01-Vue初体验/05-Vue生命周期.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/02-插值语法/01-Mustache.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/02-插值语法/02-v-once.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/02-插值语法/03-v-html.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/02-插值语法/04-v-text.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/02-插值语法/05-v-pre.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/02-插值语法/06-v-cloak.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/03-v-bind使用/01-v-bind基本使用.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/03-v-bind使用/02-v-bind语法糖.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/03-v-bind使用/03-绑定class属性(对象).html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/03-v-bind使用/04-绑定class属性(练习).html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/03-v-bind使用/05-绑定class属性(对象补充).html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 01/预习代码/LearnVuejs01/js/vue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 04/预习代码/02-tabbar/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 04/预习代码/02-tabbar/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 04/预习代码/02-tabbar/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 04/预习代码/02-tabbar/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 04/预习代码/02-tabbar/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 04/预习代码/02-tabbar/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 04/预习代码/02-tabbar/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 04/预习代码/02-tabbar/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 04/预习代码/02-tabbar/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 06/上课代码/LearnVuejs06/03-testvuecli3/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 06/上课代码/LearnVuejs06/03-testvuecli3/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 06/预习代码/02-tabbar/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 06/预习代码/02-tabbar/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 06/预习代码/02-tabbar/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 06/预习代码/02-tabbar/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 06/预习代码/02-tabbar/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 06/预习代码/02-tabbar/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 06/预习代码/02-tabbar/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 06/预习代码/02-tabbar/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 06/预习代码/02-tabbar/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 06/预习代码/05-network/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 06/预习代码/05-network/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 06/预习代码/05-network/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 06/预习代码/05-network/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 06/预习代码/05-network/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 06/预习代码/05-network/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/postcss.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 08/预习代码/mall/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/postcss.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 09/预习代码/mall/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 11/课堂代码/supermall/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 11/课堂代码/supermall/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 11/课堂代码/supermall/src/components/common/scroll/Scroll.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 11/课堂代码/supermall/src/components/common/scroll/Scroll.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 11/课堂代码/supermall/src/components/content/goods/GoodsListItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 11/课堂代码/supermall/src/components/content/goods/GoodsListItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 11/课堂代码/supermall/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 11/课堂代码/supermall/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 11/课堂代码/supermall/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 11/课堂代码/supermall/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 11/课堂代码/supermall/src/views/home/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 11/课堂代码/supermall/src/views/home/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuejs资料和代码/Day 11/课堂代码/supermall/src/views/home/childComps/HomeSwiper.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuejs资料和代码/Day 11/课堂代码/supermall/src/views/home/childComps/HomeSwiper.vue" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="vue" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="tsconfig.json" />
+        <option value="Less File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PATH_TO_GIT" value="D:\programme\software\tools\github\install\Git\bin\git.exe" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/vuejs资料和代码/Day 06/预习代码/05-network" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1jqgHOA4vPnxKJjBKHTBDAt1lTf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="8.9.4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ShiXun2/test01" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="copyright.filetypes.Vue.js" />
+    <property name="ts.external.directory.path" value="D:\programme\software\compiler\webstorm\WebStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\programme\code\ws-space\vue\ShiXun2\test01" />
+      <recent name="D:\programme\code\ws-space\vue\ShiXun2\test01\src\assets\img" />
+      <recent name="D:\programme\code\ws-space\vue\ShiXun2\test01\src\components\content\navbar" />
+      <recent name="D:\programme\code\ws-space\vue\ShiXun2\test01\src\views\index" />
+      <recent name="D:\programme\code\ws-space\vue\ShiXun2\test01\src\views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\programme\code\ws-space\vue\ShiXun5\music-front\src\components\context" />
+      <recent name="D:\programme\code\ws-space\vue\ShiXun5\music-front\src\page\index" />
+      <recent name="D:\programme\code\ws-space\vue\ShiXun2\test01\src\assets\img" />
+      <recent name="D:\programme\code\ws-space\vue\FinallyProject\supermall" />
+      <recent name="D:\programme\code\ws-space\vue\FinallyProject\supermall\src\assets\css" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.01-BScroll的基本使用.html">
+    <configuration name="01-BScroll的基本使用.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/vue/LearnBS/01-BScroll的基本使用.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="02-Promise的另一种写法.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/vue/Promise/02-Promise的另一种写法.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="App.vue" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/vue/06/clitestone/src/App.vue" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Demo.vue" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/vue/FinallyProject/supermall/src/views/betterscrollDemo/Demo.vue" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/vue/06/cli2test01/dist/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.01-BScroll的基本使用.html" />
+        <item itemvalue="JavaScript Debug.Demo.vue" />
+        <item itemvalue="JavaScript Debug.02-Promise的另一种写法.html" />
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.App.vue" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="76e03ec0-8d9f-4130-837f-2dd4b70655fb" name="Default Changelist" comment="" />
+      <created>1604536946412</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604536946412</updated>
+      <workItem from="1604536948736" duration="1100000" />
+      <workItem from="1604563858496" duration="1338000" />
+      <workItem from="1604669744811" duration="2347000" />
+      <workItem from="1604729198573" duration="15624000" />
+      <workItem from="1604753949103" duration="6176000" />
+      <workItem from="1604794845918" duration="3292000" />
+      <workItem from="1604835433932" duration="4250000" />
+      <workItem from="1604876233352" duration="1995000" />
+      <workItem from="1604890792946" duration="5673000" />
+      <workItem from="1604902504141" duration="9356000" />
+      <workItem from="1604917786878" duration="1979000" />
+      <workItem from="1604923029286" duration="6411000" />
+      <workItem from="1604933261005" duration="6000" />
+      <workItem from="1604969405448" duration="3242000" />
+      <workItem from="1604992171893" duration="8187000" />
+      <workItem from="1605006210513" duration="1712000" />
+      <workItem from="1605012788036" duration="6477000" />
+      <workItem from="1605051526926" duration="600000" />
+      <workItem from="1605064246280" duration="20890000" />
+      <workItem from="1605087136321" duration="1662000" />
+      <workItem from="1605088820397" duration="2168000" />
+      <workItem from="1605098182130" duration="226000" />
+      <workItem from="1605098443484" duration="5909000" />
+      <workItem from="1605149958539" duration="4904000" />
+      <workItem from="1605154900266" duration="14286000" />
+      <workItem from="1605194387714" duration="55000" />
+      <workItem from="1605223494448" duration="9880000" />
+      <workItem from="1605235618375" duration="330000" />
+      <workItem from="1605243721830" duration="7103000" />
+      <workItem from="1605272476738" duration="6299000" />
+      <workItem from="1605328134554" duration="6000" />
+      <workItem from="1605329229671" duration="1980000" />
+      <workItem from="1605349976747" duration="3083000" />
+      <workItem from="1605356418885" duration="7199000" />
+      <workItem from="1605396508440" duration="4247000" />
+      <workItem from="1605402921332" duration="1176000" />
+      <workItem from="1605428347953" duration="14220000" />
+      <workItem from="1605450783774" duration="754000" />
+      <workItem from="1605482103780" duration="1752000" />
+      <workItem from="1605495316747" duration="6336000" />
+      <workItem from="1605501685667" duration="1121000" />
+      <workItem from="1605507556995" duration="2161000" />
+      <workItem from="1605519307646" duration="9640000" />
+      <workItem from="1605532105972" duration="930000" />
+      <workItem from="1605534108443" duration="2000000" />
+      <workItem from="1605565580629" duration="10540000" />
+      <workItem from="1605588056529" duration="20360000" />
+      <workItem from="1605617742701" duration="2806000" />
+      <workItem from="1605623351115" duration="196000" />
+      <workItem from="1605623600966" duration="2000" />
+      <workItem from="1605624331328" duration="1886000" />
+      <workItem from="1605668080296" duration="21920000" />
+      <workItem from="1605695808435" duration="8237000" />
+      <workItem from="1605743336563" duration="8748000" />
+      <workItem from="1605770540404" duration="6309000" />
+      <workItem from="1605785674759" duration="522000" />
+      <workItem from="1605786217378" duration="4000" />
+      <workItem from="1605786420058" duration="238000" />
+      <workItem from="1605787811029" duration="2086000" />
+      <workItem from="1605792925481" duration="5140000" />
+      <workItem from="1605828450263" duration="1229000" />
+      <workItem from="1605848018827" duration="3602000" />
+      <workItem from="1605864308616" duration="15584000" />
+      <workItem from="1605919049349" duration="3184000" />
+      <workItem from="1605935706785" duration="16039000" />
+      <workItem from="1605956948640" duration="1385000" />
+      <workItem from="1605960178375" duration="5715000" />
+      <workItem from="1605967021848" duration="26000" />
+      <workItem from="1606005236307" duration="11597000" />
+      <workItem from="1606107473832" duration="61000" />
+      <workItem from="1607492226831" duration="622000" />
+      <workItem from="1607493041061" duration="3297000" />
+      <workItem from="1607511319815" duration="4000" />
+      <workItem from="1607511334613" duration="1999000" />
+      <workItem from="1607685590489" duration="197000" />
+      <workItem from="1607928891948" duration="69000" />
+      <workItem from="1607941058451" duration="4465000" />
+      <workItem from="1607945540825" duration="2051000" />
+      <workItem from="1607948616109" duration="1653000" />
+      <workItem from="1607998659941" duration="3359000" />
+      <workItem from="1608013058402" duration="494000" />
+      <workItem from="1608013578572" duration="3832000" />
+      <workItem from="1608034614353" duration="14940000" />
+      <workItem from="1608075278076" duration="611000" />
+      <workItem from="1608079240389" duration="5236000" />
+      <workItem from="1608089199655" duration="4423000" />
+      <workItem from="1608125923809" duration="1609000" />
+      <workItem from="1608165538317" duration="4511000" />
+      <workItem from="1608191151687" duration="3796000" />
+      <workItem from="1608251477982" duration="6685000" />
+      <workItem from="1608273082831" duration="980000" />
+      <workItem from="1608274195631" duration="6778000" />
+      <workItem from="1608286885275" duration="706000" />
+      <workItem from="1608288094361" duration="1408000" />
+      <workItem from="1608295669346" duration="2735000" />
+      <workItem from="1608299382429" duration="12000" />
+      <workItem from="1608389001144" duration="173000" />
+      <workItem from="1608390559719" duration="610000" />
+      <workItem from="1608424887035" duration="45000" />
+      <workItem from="1608864049685" duration="619000" />
+      <workItem from="1612607530648" duration="19000" />
+      <workItem from="1612607578482" duration="13000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="470" y="219" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607492824233">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="470" y="219" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1607492824233" />
+    <state x="499" y="163" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608100116934">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="499" y="163" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1608100116934" />
+    <state x="372" y="10" key="CommitChangelistDialog2" timestamp="1605600304984">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="372" y="10" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1605600304984" />
+    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1605091387053">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1605091387053" />
+    <state x="270" y="59" key="SettingsEditor" timestamp="1608000833620">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="270" y="59" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1608000833620" />
+    <state x="562" y="334" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605600299522">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="562" y="334" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1605600299522" />
+    <state x="425" y="189" key="run.anything.popup" timestamp="1605774849331">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1605774849331" />
+    <state x="430" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1608298051944">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="430" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1608298051944" />
+  </component>
+</project>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>v-show和v-if的区别</title>
+  <script src="../js/vue.js"></script>
+</head>
+<body>
+<div id="demo">
+<!--  虽然两者都能同时消失和出现,但是两者的消失方式不同-->
+
+<!--  v-if如果条件不满足,页面中就不会存在该元素-->
+  <h2 id="if" v-if="isShow">{{message}}</h2>
+
+<!--  v-show如果条件不满足,页面中的元素的style样式会变成none-->
+  <h2 id="show" v-show="isShow">{{message}}</h2>
+
+</div>
+
+<script>
+  const app = new Vue({
+    el: "#demo",
+    data: {
+      message: '你好',
+      isShow: true
+    },
+
+  })
+</script>
+</body>
+</html>

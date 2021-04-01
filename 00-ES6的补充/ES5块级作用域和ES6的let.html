@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ES5块级作用域</title>
+</head>
+<body>
+<button>按钮1</button>
+<button>按钮2</button>
+<button>按钮3</button>
+
+
+<script>
+    /**
+     * 须知:ES5中出函数外没有块级作用域的概念,会出现许多问题,但在ES6中的let就有了块级作用域,ES5出现的问题如下所示
+     */
+    // var btns = document.getElementsByTagName('button');
+    // for (var i = 0; i < btns.length; i++) { //for循环没有块级作用域
+    //     btns[i].addEventListener('click', function () {
+    //         console.log(('第' + i + '个按钮被点击'));
+    //     })
+    // }
+    /*会发现无论哪个按钮被点击,都会输出最后的按钮,这是因为ES5中除函数外没有块级作用域的概念,当i++时,会把for循环的var i 属性更改,此时,就展示出了
+    有多少循环就输出多大的i*/
+
+
+    //针对于以上的问题,可以利用函数的块级作用域,即闭包
+    // var btnss = document.getElementsByTagName('button');
+    // for (var j = 0; j < btnss.length; j++) {
+    //     (function (j) {  //使用立即执行函数,因为ES5中函数有块级作用域的概念,所以就把取到的值传入到function的参数中,借助函数的作用域来存储每次的++取值
+    //         btnss[j].addEventListener('click', function () {
+    //             console.log(('第' + j + '个按钮被点击'));
+    //         })
+    //     })(j)
+    // }
+    /*此时可以发现已经正确了,这是因为ES5中函数有块级作用域的概念,把每次循环var j 的值传入到函数中,此时这个数在函数中就被块级化了,不
+        会在每次j++时改变*/
+
+
+
+    //ES6的let引入,针对ES5的各种问题,let有块级作用域的概念,如下例子所示
+    var btnsss = document.getElementsByTagName('button');
+    for (let k = 0; k < btnsss.length; k++) {
+        btnsss[k].addEventListener('click', function () {
+            console.log(('第' + k + '按钮被点击'));
+        })
+    }
+    /*可以看出输入结果正确,此时let有块级作用域得以验证,每次k++不会影响到let k的值*/
+
+</script>
+</body>
+</html>

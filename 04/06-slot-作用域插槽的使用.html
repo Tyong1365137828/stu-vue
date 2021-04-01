@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>作用域插槽的使用</title>
+</head>
+<body>
+
+<!--root组件-->
+<div id="demo">
+  <h2>root组件</h2>
+  <p>root组件内容</p>
+
+  <cpn></cpn><!--使用cpn插槽内的 默认ul>li格式 展示数据-->
+
+  <cpn>
+    <template slot-scope="sscope"><!--起一个引用名-->
+      <i v-for="l in sscope.sdata">{{l}}&nbsp;&nbsp;——&nbsp;&nbsp;</i><!--使用  引用名.slot的':插槽上命名的数据名'-->
+    </template>
+  </cpn>
+
+  <cpn>
+    <template slot-scope="sscope">
+      <i>{{sscope.sdata.join('  *  ')}}</i><!--join()函数的作用,把数组转换为字符串输出,并且可以在每个数组元素之间加上字符-->
+    </template>
+  </cpn>
+
+</div>
+
+
+<!--cpn组件模板-->
+<template id="cpn">
+  <div>
+    <h2>cpn组件</h2>
+
+    <slot :sdata="language"><!--取出cpn组件内的language数据,并在插槽上命名为:sdata-->
+      <ul>
+        <li v-for="l in language">{{l}}</li>
+      </ul>
+    </slot>
+
+  </div>
+</template>
+
+
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: "#demo",
+    data: {
+      message: '你好'
+    },
+    components: {
+      cpn: {
+        template: '#cpn',
+        data () {
+          return {
+            language: ['JavaScript', 'C++', 'C#', 'Python', 'Java', 'Go']
+          }
+        }
+      }
+    }
+
+  })
+</script>
+</body>
+</html>

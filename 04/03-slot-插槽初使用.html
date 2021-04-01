@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>slot-插槽初使用</title>
+</head>
+<body>
+
+<!--Vue实例-->
+<div id="demo">
+  <cpn></cpn>
+
+  <cpn><button>按钮使用插槽</button></cpn>
+
+  <cpn><span>span使用插槽</span></cpn>
+
+  <cpn><i>i使用插槽</i></cpn>
+
+  <cpn>
+    <span>span使用插槽</span>
+    <h5>h5使用插槽</h5>
+    <i>i使用插槽</i>
+  </cpn>
+</div>
+
+
+<!--组件cpn的模板-->
+<template id="cpn">
+  <div>
+    <h2>我是cpn组件</h2>
+    <p>我是cpn组件内容</p>
+    <!--<slot></slot>--><!--定义插槽-->
+    <slot><p>插槽默认带值</p></slot><!--插槽默认带值-->
+
+  </div>
+</template>
+
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: "#demo",
+    data: {
+      message: '你好'
+    },
+    components: {
+      cpn: {
+        template: '#cpn'
+      }
+    }
+
+  })
+</script>
+</body>
+</html>

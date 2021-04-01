@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bind动态绑定class对数组语法</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+
+<div id="demo">
+<!--    写法一，会直接把其当作字符串,然后放入class中-->
+    <h1 class="title" :class="['class1', 'class2']">{{message}}</h1>
+<!--    写法二，会把其当作变量,然后去data中找到变量的值放入class'中-->
+    <h1 class="title" :class="[class1, class2]">{{message}}</h1>
+<!--    写法三-->
+    <h1 class="title" :class="getClass()">{{message}}</h1>
+</div>
+    <script>
+        const app = new Vue({
+            el: "#demo",
+            data: {
+                message: '你好',
+                class1: 'active',
+                class2: 'line'
+            },
+            methods: {
+                getClass: function () {
+                    return [this.class1, this.class2]
+                }
+            }
+
+        })
+    </script>
+
+</body>
+</html>

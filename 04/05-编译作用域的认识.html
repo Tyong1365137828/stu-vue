@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>编译作用域的认识</title>
+</head>
+<body>
+
+<!--root组件-->
+<div id="demo">
+  <h2>root组件</h2>
+  <p>root组件内容</p>
+
+  <cpn v-show="isShow"></cpn><!--这里的isShow是使用的Vue实例(root组件)中的data的isShow-->
+</div>
+
+<!--cpn组件-->
+<template id="cpn">
+  <div>
+    <h2>cpn组件</h2>
+    <p>cpn组件内容</p>
+
+    <i v-show="isShow">展示与否的内容</i><!--这里的isShow是使用的cpn组件内的data的isShow-->
+  </div>
+</template>
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: "#demo",
+    data: {
+      message: '你好',
+      isShow: true
+    },
+    components: {
+      cpn: {
+        template: '#cpn',
+        data () {
+          return {
+            isShow: false
+          }
+        }
+      }
+    }
+
+  })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>const的使用和注意</title>
+</head>
+<body>
+
+<script>
+    //1.常量的标识符被赋值后,不可以进行更改
+    // const name = 'tyong';
+    // name = 'ty';//错误,不能赋值
+
+
+    //2.常量标识后必须进行赋值
+    // const name ;//错误
+    // const name ='tyong';//正确
+
+
+    //3.常量的含义是指向的对象不能进行修改,但是指向对象的内部属性可以进行修改
+    const obj = {
+        name: 'TYong',
+        age: 20,
+        wight: 62
+    }
+    console.log('初始obj:' + obj.name);
+    //可以修改常对象内部的属性
+    obj.name = '汤勇';
+    obj.age = 21;
+    obj.wight = 52;
+    console.log('修改后的obj:' + obj.name);
+
+</script>
+</body>
+</html>

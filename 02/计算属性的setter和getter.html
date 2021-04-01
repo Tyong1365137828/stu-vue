@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算属性的setter和getter</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+<div id="demo">
+    通过函数获取全部名字(5次): {{getFullName()}}<br>{{getFullName()}}<br>{{getFullName()}}<br>{{getFullName()}}<br>{{getFullName()}}<br>
+    <br>
+    通过计算属性获取全部名字(5次): {{fullName}}<br>{{fullName}}<br>{{fullName}}<br>{{fullName}}<br>{{fullName}}<br>
+
+    <!--通过以上和浏览器控制台展示可以发现函数无缓存概念,前台调用几次就执行几次函数,运行效率就相对较慢;而计算属性在vue内部有缓存概念,调用一次后续直接使用缓存,大大的提升了运行效率-->
+</div>
+<script>
+    const app = new Vue({
+        el: "#demo",
+        data: {
+            firstName: '段奕宏',
+            lastName: '张译'
+        },
+        computed: {
+            fullName: {
+                //可以在浏览器控制台操作计算属性fullName验证set方法
+                set: function (newNames) {//set方法,注意,set一般是不会进行实现的
+                    const names = newNames.split(' ');//对输入的字符串进行分割,变成一个数组
+
+                    //进行更改
+                    this.firstName = names[0];
+                    this.lastName = names[1];
+                },
+                get: function () {//get方法
+                    console.log('调用计算属性fullName get方法');
+                    return this.firstName + ' ' + this.lastName;
+                }
+            }
+
+
+            // 因为计算属性一般不完成set方法,那么就直接实现get方法即可,就可以使用如下简写,即表示get方法
+            /*fullName: function () {
+                return this.firstName + ' ' + this.lastName;
+            }*/
+
+        },
+        methods: {
+            getFullName: function () {
+                console.log('调用函数getFullName()');
+                return this.firstName + ' ' + this.lastName;
+            }
+        }
+
+    })
+</script>
+</body>
+</html>

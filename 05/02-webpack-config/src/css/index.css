@@ -1,0 +1,5 @@
+body {
+  /*background-color: red;*/
+  /*background: url("../img/timg.jpg");*/ /*这张图片小于webpack-loader中url-loader的limit的值*/
+  background: url("../img/big.jpg");  /*这张图片大于webpack-loader中url-loader的limit的值*/
+}

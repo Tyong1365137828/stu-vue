@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>01-Promise初使用</title>
+</head>
+<body>
+
+<script>
+
+  /**Promise的用法
+   * new Promise(函数(resolve<成功>, reject<失败>){})
+   * 其中resolve和reject也是函数,分别对应成功、失败*/
+  // new Promise((resolve, reject) => {
+  //
+  //   /**这里面的异步操作必定是同步的*/
+  //   setTimeout(() => {
+  //     console.log('1-Hello World');
+  //     console.log('1-Hello World');
+  //     console.log('1-Hello World');
+  //     console.log('1-Hello World');
+  //
+  //     setTimeout(() => {
+  //       console.log('1-Hello Promise');
+  //       console.log('1-Hello Promise');
+  //       console.log('1-Hello Promise');
+  //       console.log('1-Hello Promise');
+  //
+  //       setTimeout(() => {
+  //         console.log('1-Hello VueJs');
+  //         console.log('1-Hello VueJs');
+  //         console.log('1-Hello VueJs');
+  //         console.log('1-Hello VueJs');
+  //       }, 1500)
+  //
+  //     }, 1500)
+  //
+  //   }, 1500)
+  //   /**可以发现Promise里面的异步操作此时有了先后(每1.5秒从上到下<外到内>执行一个setTimeout异步函数),但是这样当异步请求增多又会出现
+  //    * 类似于回调地狱的形式;所以,我们使用链式的方式编写Promise*/
+  // })
+
+
+
+
+  /**Promise的链式写法一*/
+  new Promise((resolve, reject) => {
+
+    /**第一次异步请求的代码*/
+    setTimeout(() => {
+      resolve() //resolve对应的就是当前Promise后面的.then()方法,resolve可以传入参数,在.then(传入的参数)调用;即成功调用
+      // reject() //reject对应的就是当前Promise后面的.catch()方法,reject可以传入参数,在.catch(传入的参数)调用;即失败调用
+    }, 1500)
+  }).then(() => { //then还是一个函数,用来处理本次Promise网络请求内的结果
+
+    /**第一次异步请求拿到的结果处理代码*/
+    console.log('2-Hello World');
+    console.log('2-Hello World');
+    console.log('2-Hello World');
+    console.log('2-Hello World');
+
+    return new Promise((resolve, reject) => {
+
+      /**第二次异步请求代码*/
+      setTimeout(() => {
+        resolve()
+      }, 1500)
+    })
+  }).then(() => {
+
+    /**第二次异步请求拿到的结果处理代码*/
+    console.log('2-Hello Promise');
+    console.log('2-Hello Promise');
+    console.log('2-Hello Promise');
+    console.log('2-Hello Promise');
+
+    return new Promise((resolve, reject) => {
+
+      /**第三次异步请求的代码*/
+      setTimeout(() => {
+        resolve()
+      }, 1500)
+    })
+  }).then(() => {
+
+    /**第三次异步请求拿到的结果处理代码*/
+    console.log('2-Hello VueJs');
+    console.log('2-Hello VueJs');
+    console.log('2-Hello VueJs');
+    console.log('2-Hello VueJs');
+  })
+
+  /**
+   * Promise的三种状态:
+   * 1、pending: 等待状态,如正在进行网络请求,或者定时器没有等到时间
+   * 2、fulfill: 满足状态,当我们主动调用了resolve()时,就处于该状态,并且会回调.then()方法
+   * 3、reject:  拒绝状态,当我们主动调用了reject()时,就处于该状态,并且会回调.catch()方法
+   * */
+
+  /**注意:Promise内部的代码必定是同步的,但是每个个Promise之间的代码是不同步的*/
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>slot-具名插槽</title>
+</head>
+<body>
+
+<!--根组件-->
+<div id="demo">
+  <h2>我是root组件</h2>
+  <p>我是root内容</p>
+
+  <cpn></cpn><!--此时显示所有带默认值的插槽-->
+  <cpn><i>安装的i插槽</i></cpn><!--此时只安装所有的非具名插槽-->
+  <cpn><strong slot="s1">安装strong插槽</strong></cpn><!--此时只安装到s1插槽-->
+
+</div>
+
+
+<!--cpn组件模板-->
+<template id="cpn">
+  <div>
+    <h2>我是cpn组件</h2>
+    <p>我是cpn组件内容</p>
+
+    <slot></slot><!--既无默认值,也无名字的插槽-->
+    <slot><span>带有默认值的插槽</span></slot><!--带有默认值的插槽-->
+    <slot name="s1"></slot><!--没有默认内容的具名插槽-->
+    <slot name="s2"><span>我是带有默认值的s2具名插槽</span></slot><!--有默认值的具名插槽-->
+
+  </div>
+</template>
+
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: "#demo",
+    data: {
+      message: '你好'
+    },
+    components: {
+      cpn: {
+        template: '#cpn'
+      }
+    }
+
+  })
+</script>
+</body>
+</html>

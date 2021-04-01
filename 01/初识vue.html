@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>初识vue</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div id="d1">
+        {{message}}
+        <h1>{{h1}}</h1>
+        <ul>
+            <li v-for="item in results">{{item}}</li>
+        </ul>
+    </div>
+    <script>
+        const app = new Vue({
+            el: '#d1',
+            data: {
+                message: '你好，vue！！！',
+                h1: 'vue渲染h1',
+                results: ['爱情公寓', '八佰', '我的团长我的团']
+            }
+        })
+    </script>
+</body>
+</html>

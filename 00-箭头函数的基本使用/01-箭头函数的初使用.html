@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>箭头函数的初使用</title>
+</head>
+<body>
+
+<script>
+
+  //1、
+  const aF = function () {
+
+  }
+
+  //2、对象字面量中定义函数
+  const obj = {
+    /*aF: function () {
+
+    }*/
+    aF () {
+
+    }
+  }
+
+  //3、ES6的箭头函数
+  /**const bF = (参数列表) => {
+
+  }*/
+  const bF = () => {  //无参,无返回值的箭头函数
+
+  }
+
+  /**参数问题*/
+  //放入大于1个参数,如2个参数
+  const add = (num1, num2) => {
+    return num1 + num2
+  }
+  //放入1个参数
+  const power = num => {
+    return num * num
+  }
+
+  /**函数中的问题*/
+  const test = () => {  //有多行代码时
+    console.log(123);
+    console.log('你好,箭头函数');
+    console.log('你好');
+  }
+  const test2 = (num1, num2) => num1 * num2  //只有一行返回值的代码时
+  console.log(test2(20, 30));
+
+  const test3 = () => console.log('hello arrowFun') //只有一行非返回值的代码时
+  console.log(test3());
+
+</script>
+</body>
+</html>

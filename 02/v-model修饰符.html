@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>v-model修饰符</title>
+</head>
+<body>
+<div id="demo">
+<!--  lazy修饰符,失去焦点或点击enter后进行v-model-->
+  <input type="text" v-model.lazy="message">
+  <h2>{{message}}</h2>
+
+  <br><br><br>
+
+<!--  number修饰符,把input输入属性变成number属性-->
+  <input type="text" v-model.number="age">
+  <h2>类型:{{typeof age}}--年龄:{{age}}</h2>
+
+  <br><br><br>
+
+<!--  trim修饰符,去除输入框的空格-->
+  <input type="text" v-model.trim="name">
+  <h2>可以去控制台输入app.name</h2>
+</div>
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: "#demo",
+    data: {
+      message: '你好',
+      age: 0,
+      name: ''
+    },
+
+  })
+</script>
+</body>
+</html>

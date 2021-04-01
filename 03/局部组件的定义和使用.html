@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>局部组件的定义和使用</title>
+</head>
+<body>
+<div id="demo">
+  <my_cpn></my_cpn>
+  <my_cpn></my_cpn>
+  <my_cpn></my_cpn>
+</div>
+
+
+<script src="../js/vue.js"></script>
+<script>
+  //1、组件构造器
+  const cpnConstructor = Vue.extend({
+    template: `
+    <div>
+      <h2>标题</h2>
+      <p>内容.....</p>
+      <p>内容....</p>
+    </div>`
+  })
+
+  const app = new Vue({
+    el: "#demo",
+    data: {
+      message: '你好'
+    },
+    components: {
+      my_cpn: cpnConstructor  //局部组件,只能在这个Vue实例中调用
+    }
+  })
+</script>
+</body>
+</html>

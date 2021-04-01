@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>登录切换和vue的复用问题</title>
+  <script src="../js/vue.js"></script>
+</head>
+<body>
+
+<div id="demo">
+  <span v-if="isUserName">
+    <label for="username">用户账号</label>
+    <input id="username" type="text" placeholder="请输入用户账号" key="uname">
+  </span>
+
+  <span v-else>
+    <label for="email">用户邮箱</label>
+    <input id="email" type="text" placeholder="请输入用户邮箱" key="uemail">
+  </span>
+
+  <button @click="isUserName = !isUserName">切换登录方式</button>
+
+  <!--通过浏览器运行结果可以发现,当切换登录方式后,input虽然已经改变,但是值还存在于已经切换的input上,
+  这是由于vue为了提升运行性能,在底层使用了虚拟DOM和元素复用的概念,尽可能使用页面已经存在的DOM元素,
+  可以通过给元素添加key属性,并赋予不同的值,使两者之间失去复用关系-->
+</div>
+
+<script>
+  const app = new Vue({
+    el: "#demo",
+    data: {
+      isUserName: true
+    }
+
+  })
+</script>
+</body>
+</html>

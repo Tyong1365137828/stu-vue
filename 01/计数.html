@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计数</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div id="demo">
+        {{num}}
+        <button  v-on:click="add()">+</button>
+        <button  v-on:click="sub">-</button>
+    </div>
+
+    <script>
+        const app = new Vue({
+            el: "#demo",
+            data: {
+                num:  0
+            },
+            methods: {
+                add: function () {
+                    this.num++;
+                    console.log("执行add()")
+                },
+                sub: function () {
+                    this.num--;
+                    console.log("执行sub()")
+                }
+            }
+        })
+    </script>
+</body>
+</html>
